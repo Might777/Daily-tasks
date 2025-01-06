@@ -1,0 +1,25 @@
+#Q1
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+print("Multiplication:", a * b)
+print("Sum:", a + b)
+
+#Q2
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+print("Largest:", x if x > y else y)
+
+#Q3
+c = float(input("Enter temperature in Celsius: "))
+f = (c * 9/5) + 32
+print("Fahrenheit:", f)
+
+#Q4
+a = float(input("Enter the first side: "))
+b = float(input("Enter the second side: "))
+c = float(input("Enter the third side: "))
+s = (a + b + c) / 2
+area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+print("Area:", area)
+
+
