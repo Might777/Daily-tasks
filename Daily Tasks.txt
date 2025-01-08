@@ -1,25 +1,51 @@
-#Q1 Calculate the multiplication and sum of two numbers
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
-print("Multiplication:", a * b)
-print("Sum:", a + b)
+# Q1: Calculate the multiplication and sum of two numbers
+# Get two numbers from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 
-#Q2  Declare two variables and print that which variable is largest using ternary operators
-x = int(input("Enter the first number: "))
-y = int(input("Enter the second number: "))
-print("Largest:", x if x > y else y)
+# Perform multiplication and addition
+multiplication = num1 * num2
+addition = num1 + num2
 
-#Q3  Python program to convert the temperature in degree centigrade to Fahrenheit
-c = float(input("Enter temperature in Celsius: "))
-f = (c * 9/5) + 32
-print("Fahrenheit:", f)
+# Display the results
+print("Multiplication:", multiplication)
+print("Sum:", addition)
 
-#Q4  Python program to find the area of a triangle whose sides are given
-a = float(input("Enter the first side: "))
-b = float(input("Enter the second side: "))
-c = float(input("Enter the third side: "))
-s = (a + b + c) / 2
-area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
-print("Area:", area)
+# Q2: Find the largest of two variables using a ternary operator
+# Get two numbers from the user
+value1 = int(input("Enter the first number: "))
+value2 = int(input("Enter the second number: "))
 
+# Determine the largest value using a ternary operator
+largest = value1 if value1 > value2 else value2
 
+# Display the largest value
+print("Largest:", largest)
+
+# Q3: Convert the temperature from Celsius to Fahrenheit
+# Get the temperature in Celsius from the user
+celsius = float(input("Enter temperature in Celsius: "))
+
+# Convert Celsius to Fahrenheit using the formula: F = (C * 9/5) + 32
+fahrenheit = (celsius * 9/5) + 32
+
+# Display the temperature in Fahrenheit
+print("Fahrenheit:", fahrenheit)
+
+# Q4: Calculate the area of a triangle given its three sides
+# Get the three sides of the triangle from the user
+side1 = float(input("Enter the first side of the triangle: "))
+side2 = float(input("Enter the second side of the triangle: "))
+side3 = float(input("Enter the third side of the triangle: "))
+
+# Calculate the semi-perimeter of the triangle: s = (a + b + c) / 2
+semi_perimeter = (side1 + side2 + side3) / 2
+
+# Calculate the area using Heron's formula: area = √(s * (s - a) * (s - b) * (s - c))
+triangle_area = (semi_perimeter * 
+                (semi_perimeter - side1) * 
+                (semi_perimeter - side2) * 
+                (semi_perimeter - side3)) ** 0.5
+
+# Display the area of the triangle
+print("Area of the triangle:", triangle_area)
