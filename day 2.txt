@@ -1,0 +1,142 @@
+#Q1Using input() function take one number from the user and using ternary operators
+
+# Prompt the user for a number and check if it's even or odd
+number = int(input("Enter a number: "))
+result = "Even" if number % 2 == 0 else "Odd"
+print(f"The number {number} is {result}.")
+
+#Q2
+# Prompt the user for two numbers
+first_number = int(input("Enter the first number: "))
+second_number = int(input("Enter the second number: "))
+
+# Swap the numbers
+first_number, second_number = second_number, first_number
+
+# Display the swapped values
+print(f"After swapping: First number = {first_number}, Second number = {second_number}")
+
+
+
+#Q3
+#Write a Program to Convert Kilometers to Miles
+
+# Prompt the user to enter a distance in kilometers
+kilometers = float(input("Enter the distance in kilometers: "))
+
+# Conversion factor from kilometers to miles
+conversion_factor = 0.621371
+
+# Convert to miles
+miles = kilometers * conversion_factor
+
+# Display the result
+print(f"{kilometers} kilometers is equal to {miles:.2f} miles.")
+
+
+#Q4
+#Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+
+# Define the principal amount, time period, and annual interest rate
+principal_amount = 200  # in rupees
+time_period = 5         # in years
+annual_rate = 5         # as a percentage
+
+# Calculate simple interest
+simple_interest = (principal_amount * time_period * annual_rate) / 100
+
+# Display the result
+print(f"The Simple Interest on Rs. {principal_amount} for {time_period} years at {annual_rate}% per year is Rs. {simple_interest}.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
