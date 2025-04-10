@@ -1,0 +1,41 @@
+# 1. Declare a div() function with two parameters. Then call the function and pass two numbers and display their division.
+def div(a, b):
+    return a / b
+
+# Example usage
+num1 = float(input("Enter the first number for division: "))
+num2 = float(input("Enter the second number for division: "))
+print(f"Division result: {div(num1, num2)}")
+
+
+# 2. Declare a square() function with one parameter. Then call the function and pass one number and display the square of that number.
+def square(n):
+    return n ** 2
+
+# Example usage
+num = float(input("Enter a number to find its square: "))
+print(f"Square of {num}: {square(num)}")
+
+
+# 3. Using max() and min() functions display the maximum and minimum of 5 random numbers.
+import random
+
+# Generate 5 random numbers
+random_numbers = [random.randint(1, 100) for _ in range(5)]
+print(f"Random numbers: {random_numbers}")
+print(f"Maximum: {max(random_numbers)}")
+print(f"Minimum: {min(random_numbers)}")
+
+
+# 4. Accept a name from the user and display that in lower case using lower() function
+name = input("Enter your name: ")
+print(f"Name in lowercase: {name.lower()}")
+
+
+# 5. Write a lambda function that takes one argument and returns 'Positive' if the number is greater than 0, 
+# 'Negative' if it's less than 0, and 'Zero' if it's 0. Test it with different numbers.
+check_sign = lambda num: 'Positive' if num > 0 else 'Negative' if num < 0 else 'Zero'
+
+# Example usage
+num_check = float(input("Enter a number to check if it is Positive, Negative, or Zero: "))
+print(check_sign(num_check))
